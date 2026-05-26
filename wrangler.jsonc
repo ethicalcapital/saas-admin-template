@@ -1,0 +1,30 @@
+{
+  "name": "saas-admin-template",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2025-10-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "example_value"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "admin-db",
+      "database_id": "7c7b5acb-6022-482b-9e95-23de209a390b"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "saas-admin-template-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
